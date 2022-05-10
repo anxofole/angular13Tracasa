@@ -25,8 +25,7 @@ ANGULAR
 - Lazy loading módulos
 - RxJS and Observables
 - Testing e2e
-- Estilos
-- Angular material
+
 
 ## Prerequisitos
 
