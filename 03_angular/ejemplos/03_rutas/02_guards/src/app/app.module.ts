@@ -5,11 +5,13 @@ import { RouterModule, Route } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginService } from './login.service';
+import { HomeGuard } from './home.guard';
 
 const routes: Route[] = [
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    canActivate: [HomeGuard]
   }
 ];
 

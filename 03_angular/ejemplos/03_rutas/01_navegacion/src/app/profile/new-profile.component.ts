@@ -12,9 +12,9 @@ export class NewProfileComponent {
 
   public back(): void {
 
-    this.router.navigate(['../']);
+    //this.router.navigate(['../']);
 
-    // this.router.navigateByUrl('profiles');
+    this.router.navigateByUrl('profiles');
 
   }
 }

@@ -12,16 +12,26 @@ import { EditProfileComponent } from './profile/edit-profile.component';
 
 const routes: Route[] = [
   {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'settings',
+    component: SettingsComponent,
+  },
+  {
     path: 'profiles',
-    component: AllProfilesComponent
-  },
-  {
-    path: 'profiles/new',
-    component: NewProfileComponent
-  },
-  {
-    path: 'profiles/:id',
-    component: EditProfileComponent
+    component: AllProfilesComponent,
+    children: [
+      {
+        path: 'new',
+        component: NewProfileComponent
+      },
+      {
+        path: ':id',
+        component: EditProfileComponent
+      },
+    ]
   },
   {
     path: '',
