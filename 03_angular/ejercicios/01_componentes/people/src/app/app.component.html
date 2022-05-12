@@ -1,0 +1,5 @@
+<span>Habilitadas: {{enabledCount}}</span>, <span>Deshabilitadas: {{disabledCount}}</span>
+
+<app-list  (personSelected)="onPersonSelected($event)" [people]="people"></app-list>
+<app-detail  (closed)="onClose()"
+(enabledChanged)="onEnabledChanged()" [person]="selectedPerson"></app-detail>
