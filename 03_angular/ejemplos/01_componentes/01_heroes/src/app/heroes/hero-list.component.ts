@@ -13,6 +13,9 @@ export class HeroListComponent implements OnInit {
 
   public color: string = "";
 
+  public name: string = "name";
+
+
   ngOnInit(): void {
     this.heroes = [
       new Hero('A'),

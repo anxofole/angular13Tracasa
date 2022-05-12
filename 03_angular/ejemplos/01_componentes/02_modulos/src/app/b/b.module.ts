@@ -6,6 +6,7 @@ import { BarComponent } from './bar/bar.component';
   imports: [
     CommonModule
   ],
-  declarations: [BarComponent]
+  declarations: [BarComponent],
+  exports: [BarComponent]
 })
 export class BModule { }

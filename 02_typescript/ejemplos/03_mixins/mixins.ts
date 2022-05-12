@@ -28,9 +28,12 @@ class User {
 
 }
 
+const timestamped = Timestamped(User);
 
 const SpecialUser = Activatable(Timestamped(User));
 const johnDoe = new SpecialUser("John Doe");
+
+
 
 
 

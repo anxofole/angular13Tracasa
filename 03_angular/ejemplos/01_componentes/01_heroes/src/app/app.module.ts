@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeroListComponent } from './heroes/hero-list.component';
+import { PatataComponent } from './patata/patata.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroListComponent
+    HeroListComponent,
+    PatataComponent
   ],
   imports: [
     BrowserModule,
